@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap Cdn Path -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <style>
+        .container{
+            background-image: url(img/background.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        a{
+            text-decoration: none;
+            padding: 5px;
+            font-size: 24px;
+            font-weight: bold;
+            font-style: italic;
+            font-variant: inherit;
+            color: rgb(24, 2, 2);
+            background-color: rgba(255, 255, 255, 0.322);
+            border-radius: 20px;
+        }
+
+        .my_pic{
+            border: 3px groove darkred;
+            border-radius: 50%;
+        }
+
+        p{
+            background-color: rgba(240, 248, 255, 0.432);
+            padding: 10px 12px;
+            margin-top: 15px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+        <div class="container">
+        <!-- User Passport Pic -->
+            <div class="row justify-content-center p-4">
+                <div class="col-12 col-md-6 text-center">
+                    <img src="img/shivam.jpg" alt="my_pic" width="120" height="120px" class="my_pic" >
+                </div>
+            </div>
+        <!-- User Name -->
+            <div class="row justify-content-center">
+                <div class="col col-md-6 text-center">
+                    <h2>Shivam Chaurasiya</h2>
+                    <h3>Web Developer</h3>
+                </div>
+            </div>
+        <!-- Impotant link (Gmail, GitHub and LinkedIn etc.) -->
+            <div class="row justify-content-center "> 
+                <div class="col-2 col-md-1 text-center">
+                        <a href="https://mail.google.com/mail/u/0/#sent?compose=new">
+                            <img src="img/gmail.png" alt="Gmail" width="60px"> </a>
+                </div>
+                <div class="col-2 col-md-1 text-center">
+                        <a href="https://github.com/Fc7049442832"><img src="img/social.png" alt="GitHub" width="60px"> </a>
+                </div>
+                <div class="col-2 col-md-1 text-center">
+                        <a href="https://bit.ly/3RkNyfm"><img src="img/linkedin.png" alt="linkedin" width="57px"> </a>
+                </div>
+            </div>
+        <!-- User things -->
+            <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <p>Passionate web developer creating digital experiences that inspire and innovate. Committed to transforming ideas into functional, user-friendly websites. Embracing challenges, I code with purpose and drive.</p>
+                    </div>
+            </div>
+        <!-- User Resume -->
+            <div class="row justify-content-center">
+                <div class="col- md-6 btn text-center p-3 ">
+                    <a href="https://drive.google.com/file/d/1bFb6KPujsl4_Sl8fjbLm-2wwxVNtZrJE/view?usp=sharing">
+                        <img src="img/download.gif" alt="Gmail" width="60px"> Resume</a>
+                </div>
+            </div>
+        <!--print bio button-->
+            <div class="row justify-content-center">
+                <div class=" col-3 btn p-1 bg-success " onclick="prin()">
+                    Print Bio
+                </div>
+            </div>
+            <center><dt id="date" style="font-size: 12px;"></dt></center>
+            
+        <!-- Footer -->
+            <div class="row justify-content-center m-2">
+               
+                <div class="col-3 col-md-1 text-center p-3">
+                    *Bio*
+                </div>
+                
+            </div>
+        </div>
+
+        <!--Java Script-->
+        <script>
+            function prin(){
+                window.print();
+            }
+            const d = new Date();
+            document.getElementById("date").innerHTML = d;
+        </script>
+    
+</body>
+</html>
